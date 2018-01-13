@@ -1,0 +1,23 @@
+{% extends "bootstrap/base.html" %}
+{% block styles %}
+{{super()}}
+{% endblock %}
+
+{% block scripts %}
+{{super()}}
+  <script src="{{url_for('.js', filename='autoresize')}}"></script>
+{% endblock %}
+{% block title %}This is an example page{% endblock %}
+
+{% block content %}
+  <h1>Hello, AutoSimc</h1>
+  <form action="" method="post">
+    <div class="input text">
+      {{form.simPermutText.label}}
+      </br>
+      {{form.simPermutText(rows='3', cols='100')}}
+    </div>
+    </br>
+    {{form.submit}}
+  </form>
+{% endblock %}

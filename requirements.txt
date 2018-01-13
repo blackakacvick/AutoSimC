@@ -1,1 +1,4 @@
 marshmallow
+uwsgi
+flask-bootstrap
+Flask-WTF
