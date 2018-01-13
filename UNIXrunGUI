@@ -1,0 +1,2 @@
+#!/bin/bash
+uwsgi --http 127.0.0.1:3031 --wsgi-file gui/REST.py --callable app
